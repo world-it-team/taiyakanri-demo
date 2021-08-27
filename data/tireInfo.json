@@ -4,7 +4,7 @@
          "number":"01",
          "name": "1 前左",
          "image": {
-             "src":"image/tire1.jpg",
+             "src":"images/tire1.jpg",
              "alt":"tire1"
          },        
          "tireInfo":{
