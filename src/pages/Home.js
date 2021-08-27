@@ -1,15 +1,11 @@
 import React from "react";
-import TireProfile from "../components/TireProfile";
-import tireData from "../data/tireInfo.json";
+import TopTable from "../components/TopTable";
 
-const data = tireData;
 function Home(props) {
   return (
-    <div>
-      {data.tireProfile.map((items, index) => {
-        return <h2>{items.name}</h2>;
-      })}
-    </div>
+    <>
+      <TopTable/>
+    </>
   );
 }
 
