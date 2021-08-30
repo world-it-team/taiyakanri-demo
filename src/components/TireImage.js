@@ -12,11 +12,15 @@ const useStyles = makeStyles({
     width: "100%",
   },
   nameTire: {
-    border: "3px solid #61daff",
-    height: "60px",
+    border: "2px solid #61daff",
+    height: "50px",
     width: "80%",
     textAlign: "center",
     margin: "auto",
+    "& p": {
+      fontWeight: "bold",
+      fontSize: "20px",
+    },
   },
   image: {
     height: "100px",
@@ -29,7 +33,7 @@ function TireImage(props) {
   return (
     <div className={classes.root}>
       <div className={classes.nameTire}>
-        <h3>{props.tireInfo.name}</h3>
+        <p>{props.tireInfo.name}</p>
       </div>
       <div>
         <img

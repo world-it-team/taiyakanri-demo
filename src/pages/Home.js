@@ -1,10 +1,15 @@
 import React from "react";
-
-import ProductInfo from "../components/ProductInfo";
+import TopTable from "../components/TopTable";
+import TireProfile from "../components/TireProfile";
+import MiddleTable from "../components/MiddleTable";
 
 function Home(props) {
   return (
-    <ProductInfo />
+    <>
+      <TopTable />
+      <MiddleTable />
+      <TireProfile />
+    </>
   );
 }
 

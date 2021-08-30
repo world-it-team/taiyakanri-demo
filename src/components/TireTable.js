@@ -11,6 +11,7 @@ const useStyles = makeStyles({
     borderCollapse: "collapse",
     "& td,tr,th": {
       border: "1px solid #333",
+      fontWeight: "normal",
     },
   },
   row1col1: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles({
   },
   row1col2: {
     backgroundColor: "#aee3f1",
-    width: "26%",
+    width: "29%",
   },
   row3header: {
     writingMode: "vertical-rl",
@@ -29,14 +30,14 @@ const useStyles = makeStyles({
   },
   row3th: {
     backgroundColor: "#aee3f1",
-    width: "26%",
+    width: "29%",
   },
   row3td1: {
     backgroundColor: "red",
-    width: "20%",
+    width: "17%",
   },
   row3td: {
-    width: "20%",
+    width: "17%",
   },
   row7header: {
     writingMode: "vertical-rl",
@@ -46,14 +47,14 @@ const useStyles = makeStyles({
   },
   row7th: {
     backgroundColor: "#0bbc4d40",
-    width: "26%",
+    width: "29%",
   },
   row7td1: {
     backgroundColor: "orange",
-    width: "20%",
+    width: "17%",
   },
   row7td: {
-    width: "20%",
+    width: "17%",
   },
   comment: {
     backgroundColor: "#aba7a74d",

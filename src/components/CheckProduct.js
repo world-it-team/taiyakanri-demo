@@ -1,38 +1,41 @@
-import React from 'react';
+import React from "react";
+import data from "../data/testProduct.json";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   table: {
-    margin: "auto",
+    width: "100%",
+    margin: "10px auto 0px auto",
     borderCollapse: "collapse",
     "& th, td": {
       border: "1px solid black",
-      fontWeight: "normal",
     },
     "& th": {
       backgroundColor: "#e6f2f5",
     },
-    "& td": {
-      backgroundColor: "#ff0000",
-      fontWeight: "bold",
-      fontSize: "20px",
+    "& tr": {
+      height: "30px",
     },
     textAlign: "center",
   },
 }));
 
-function Judgement(props) {
+function CheckProduct(props) {
   const classes = useStyles();
   return (
     <table className={classes.table}>
       <tr>
-        <th>タイヤ交換判定 </th>
+        {data.testProduct.map((item, index) => (
+          <th>{item.label}</th>
+        ))}
       </tr>
       <tr>
-        <td rowSpan={3}>即交換</td>
+        {data.testProduct.map((item, index) => (
+          <td>{item.content}</td>
+        ))}
       </tr>
     </table>
   );
 }
 
-export default Judgement;
+export default CheckProduct;
