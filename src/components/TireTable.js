@@ -8,6 +8,7 @@ const useStyles = makeStyles({
   },
   table: {
     textAlign: "center",
+    width: "100%",
     borderCollapse: "collapse",
     "& td,tr,th": {
       border: "1px solid #333",

@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     width: "100%",
   },
   nameTire: {
-    border: "2px solid #61daff",
+    border: "3px solid #61daff",
     height: "50px",
     width: "80%",
     textAlign: "center",
@@ -20,6 +20,7 @@ const useStyles = makeStyles({
     "& p": {
       fontWeight: "bold",
       fontSize: "20px",
+      marginBlockStart: "0.5em",
     },
   },
   image: {
