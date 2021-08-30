@@ -1,11 +1,11 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
-import data from "../data/topTable.json";
+import data from "../data/testProduct.json";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   table: {
-    width: "95%",
-    margin: "auto",
+    width: "100%",
+    margin: "10px auto 0px auto",
     borderCollapse: "collapse",
     "& th, td": {
       border: "1px solid black",
@@ -18,19 +18,19 @@ const useStyles = makeStyles({
     },
     textAlign: "center",
   },
-});
+}));
 
-function TopTable(props) {
+function CheckProduct(props) {
   const classes = useStyles();
   return (
     <table className={classes.table}>
       <tr>
-        {data.topTable.map((item, index) => (
-          <th>{item.lable}</th>
+        {data.testProduct.map((item, index) => (
+          <th>{item.label}</th>
         ))}
       </tr>
       <tr>
-        {data.topTable.map((item, index) => (
+        {data.testProduct.map((item, index) => (
           <td>{item.content}</td>
         ))}
       </tr>
@@ -38,4 +38,4 @@ function TopTable(props) {
   );
 }
 
-export default TopTable;
+export default CheckProduct;
