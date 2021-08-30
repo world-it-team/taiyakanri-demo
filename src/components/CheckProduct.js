@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
       border: "1px solid black",
     },
     "& th": {
+      fontWeight: "normal",
       backgroundColor: "#e6f2f5",
     },
     "& tr": {

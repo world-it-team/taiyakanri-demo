@@ -8,10 +8,16 @@ const useStyles = makeStyles({
   root: {
     width: "95%",
     display: "flex",
-    margin: "10px auto 0px auto",
+    margin: "10px auto",
+    justifyContent: "space-between",
   },
-  left: { width: "88%" },
-  right: { width: "10%", float: "right" },
+  left: {
+    width: "85%"
+  },
+  right: {
+    width: "13%",
+
+  },
 });
 
 function MiddleTable(props) {
