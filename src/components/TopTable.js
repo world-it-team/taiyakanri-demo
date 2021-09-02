@@ -25,14 +25,28 @@ function TopTable(props) {
   return (
     <table className={classes.table}>
       <tr>
-        {data.topTable.map((item, index) => (
-          <th>{item.lable}</th>
-        ))}
+        <th>管理番号</th>
+        <th>契約者名</th>
+        <th>ロケーション</th>
+        <th>車種</th>
+        <th>ナンバー</th>
+        <th>倉庫業者</th>
+        <th>契約期間</th>
+        <th>契約形態・状況</th>
+
       </tr>
       <tr>
-        {data.topTable.map((item, index) => (
-          <td>{item.content}</td>
-        ))}
+
+        <td>{data.topTable.controlNumber}</td>
+        <td>{data.topTable.contractorName}</td>
+        <td>{data.topTable.location}</td>
+        <td>{data.topTable.vehicleType}</td>
+        <td>{data.topTable.number}</td>
+        <td>{data.topTable.wareHouse}</td>
+        <td>{data.topTable.contractPeriod}</td>
+        <td>{data.topTable.contractType}</td>
+
+
       </tr>
     </table>
   );

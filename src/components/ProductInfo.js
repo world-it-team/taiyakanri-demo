@@ -1,6 +1,7 @@
 import React from 'react';
 import data from "../data/productInfo.json";
 import { makeStyles } from "@material-ui/core/styles";
+import { red } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
     table: {
@@ -8,11 +9,8 @@ const useStyles = makeStyles((theme) => ({
         margin: "auto",
         borderCollapse: "collapse",
         textAlign: "center",
-        "& th, td": {
+        "& td": {
             border: "1px solid black",
-        },
-        "& th": {
-            backgroundColor: "#e6f2f5",
         },
         "& tr": {
             height: "30px",
@@ -23,33 +21,35 @@ const useStyles = makeStyles((theme) => ({
     },
     contentChild: {
         backgroundColor: "#ff0000",
-    }
+    },
+
 }));
 
 function ProductInfo(props) {
     const classes = useStyles();
     return (
-      <table className={classes.table}>
-        <tr className={classes.title}>
-          {data.productInfo.map((item, index) => (
-            <td colSpan={data.productInfo.length === index + 1 ? 2 : 1}>
-              {item.label}
-            </td>
-          ))}
-        </tr>
-        <tr>
-          {data.productInfo.map((item, index) =>
-            data.productInfo.length === index + 1 ? (
-              <>
-                <td className={classes.contentChild}>{item.content[0]}</td>
-                <td>{item.content[1]}</td>
-              </>
-            ) : (
-              <td>{item.content}</td>
-            )
-          )}
-        </tr>
-      </table>
+        <table className={classes.table}>
+            <tr className={classes.title}>
+                <td>検索実施日</td>
+                <td>ステータス</td>
+                <td>タイヤ種別</td>
+                <td>ホイール</td>
+                <td>ランフラッド</td>
+                <td colSpan="2">経過年数</td>
+            </tr>
+            <tr>
+
+                <td>{data.productInfo.searchDate}</td>
+                <td>{data.productInfo.status}</td>
+                <td>{data.productInfo.tireType}</td>
+                <td>{data.productInfo.wheel}</td>
+                <td>{data.productInfo.runFlood}</td>
+                <td className={classes.contentChild}>{data.productInfo.elapsedYears.recommended}</td>
+                <td>{data.productInfo.elapsedYears.date}</td>
+
+
+            </tr>
+        </table>
     );
 }
 

@@ -1,31 +1,13 @@
 {
-    "productInfo": [
-        {
-            "label": "検索実施日",
-            "content": "2021/08/27"
-        },
-        {
-            "label": "ステータス",
-            "content": "点検済み"
-        },
-        {
-            "label": "タイヤ種別",
-            "content": "スタッドレス"
-        },
-        {
-            "label": "ホイール",
-            "content": "アルミニウム"
-        },
-        {
-            "label": "ランフラッド",
-            "content": "NORMAL"
-        },
-        {
-            "label": "経過年数",
-            "content": [
-                "交換推奨",
-                "10年８カ月"
-            ]
+    "productInfo": {
+        "searchDate": "2021/08/27",
+        "status": "点検済み",
+        "tireType": "スタッドレス",
+        "wheel": "ホイール",
+        "runFlood": "NORMAL",
+        "elapsedYears": {
+            "recommended": "交換推奨",
+            "date": "10年８カ月"
         }
-    ]
+    }
 }

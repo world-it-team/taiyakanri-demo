@@ -1,36 +1,12 @@
 {
-    "topTable": [
-        {
-            "lable": "管理番号",
-            "content": "5560583221"
-        },
-        {
-            "lable": "契約者名",
-            "content": "佐藤一郎"
-        },
-        {
-            "lable": "ロケーション",
-            "content": "F1A00"
-        },
-        {
-            "lable": "車種",
-            "content": "サン"
-        },
-        {
-            "lable": "ナンバー",
-            "content": "富士山500お1122"
-        },
-        {
-            "lable": "倉庫業者",
-            "content": "デモ倉庫山梨◯x自動車販売甲府店"
-        },
-        {
-            "lable": "契約期間",
-            "content": "2017/08/09~2018/08/08: 12ヶ月間"
-        },
-        {
-            "lable": "契約形態/状況",
-            "content": "年間契約新規"
-        }
-    ]
+    "topTable": {
+        "controlNumber": "5560583221",
+        "contractorName": "佐藤一郎",
+        "location": "F1A00",
+        "vehicleType": "サン",
+        "number": "富士山500お1122",
+        "wareHouse": "デモ倉庫山梨◯x自動車販売甲府店",
+        "contractPeriod": "2017/08/09~2018/08/08: 12ヶ月間",
+        "contractType": "年間契約新規"
+    }
 }

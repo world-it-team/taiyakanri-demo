@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data/testProduct.json";
+import data from "../data/checkProduct.json";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -7,33 +7,38 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     margin: "10px auto 0px auto",
     borderCollapse: "collapse",
-    "& th, td": {
+    textAlign: "center",
+    "& td": {
       border: "1px solid black",
     },
-    "& th": {
-      fontWeight: "normal",
-      backgroundColor: "#e6f2f5",
-    },
+
     "& tr": {
       height: "30px",
     },
-    textAlign: "center",
+
   },
+  title: {
+    backgroundColor: "#e6f2f5",
+  }
 }));
 
 function CheckProduct(props) {
   const classes = useStyles();
   return (
     <table className={classes.table}>
-      <tr>
-        {data.testProduct.map((item, index) => (
-          <th>{item.label}</th>
-        ))}
+      <tr className={classes.title}>
+        <td>IN / OUT 組み換え</td>
+        <td>アライメント</td>
+        <td>充填空気圧確認</td>
+        <td>パンク点検</td>
+        <td>ホイール交換/修理</td>
       </tr>
       <tr>
-        {data.testProduct.map((item, index) => (
-          <td>{item.content}</td>
-        ))}
+        <td>{data.checkProduct.recombinationIO}</td>
+        <td>{data.checkProduct.alignment}</td>
+        <td>{data.checkProduct.check}</td>
+        <td>{data.checkProduct.punctureIns}</td>
+        <td>{data.checkProduct.replacementOrRepair}</td>
       </tr>
     </table>
   );
