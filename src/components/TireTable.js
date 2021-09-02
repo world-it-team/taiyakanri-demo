@@ -85,7 +85,13 @@ function TireTable(props) {
           <th className={classes.row3th}>
             {data.measurement.content[0].item[0]}
           </th>
-          <td className={classes.row3td1}>
+          <td
+            className={
+              data.measurement.content[0].item[1] === "即交換"
+                ? classes.row3td1
+                : classes.row3td
+            }
+          >
             {data.measurement.content[0].item[1]}
           </td>
           <th className={classes.row3th}>

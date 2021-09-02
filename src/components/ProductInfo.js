@@ -29,25 +29,27 @@ const useStyles = makeStyles((theme) => ({
 function ProductInfo(props) {
     const classes = useStyles();
     return (
-        <table className={classes.table}>
-            <tr className={classes.title}>
-                <td>{data.productInfo[0].label}</td>
-                <td>{data.productInfo[1].label}</td>
-                <td>{data.productInfo[2].label}</td>
-                <td>{data.productInfo[3].label}</td>
-                <td>{data.productInfo[4].label}</td>
-                <td colSpan={2}>{data.productInfo[5].label}</td>
-            </tr>
-            <tr>
-                <td>{data.productInfo[0].content}</td>
-                <td>{data.productInfo[1].content}</td>
-                <td>{data.productInfo[2].content}</td>
-                <td>{data.productInfo[3].content}</td>
-                <td>{data.productInfo[4].content}</td>
-                <td className={classes.contentChild} >{data.productInfo[5].content[0]}</td>
-                <td>{data.productInfo[5].content[1]}</td>
-            </tr>
-        </table>
+      <table className={classes.table}>
+        <tr className={classes.title}>
+          {data.productInfo.map((item, index) => (
+            <td colSpan={data.productInfo.length === index + 1 ? 2 : 1}>
+              {item.label}
+            </td>
+          ))}
+        </tr>
+        <tr>
+          {data.productInfo.map((item, index) =>
+            data.productInfo.length === index + 1 ? (
+              <>
+                <td className={classes.contentChild}>{item.content[0]}</td>
+                <td>{item.content[1]}</td>
+              </>
+            ) : (
+              <td>{item.content}</td>
+            )
+          )}
+        </tr>
+      </table>
     );
 }
 

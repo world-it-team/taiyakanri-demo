@@ -5,7 +5,7 @@ import data from "../data/topTable.json";
 const useStyles = makeStyles({
   table: {
     width: "95%",
-    margin: "10px auto 0px auto",
+    margin: "25px auto 0px auto",
     borderCollapse: "collapse",
     "& th, td": {
       border: "1px solid black",
