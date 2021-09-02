@@ -1,508 +1,132 @@
 {
     "tireProfile": [
         {
-            "number": "01",
             "name": "1 前左",
+            "number": "01",
             "image": {
                 "src": "tire1.png",
                 "alt": "tire1"
             },
-            "tireInfo": {
-                "label": "タイヤ情報",
-                "content": "[スタッドレス][アルミニウム][145/65R15]"
-            },
-            "maker": {
-                "label": "メーカー/製造年",
-                "content": "[BS製][[2507][2007年06月]]"
-            },
+            "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+            "makerVersion": "[BS製][[2507][2007年06月]]",
             "measurement": {
-                "label": "測定",
-                "content": [
-                    {
-                        "item": [
-                            "タイヤ交換判定",
-                            "即交換"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "製造年数判定",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "IN/OUT 組み換え",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "パンク点検",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "アライメント",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイール交換/修理",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "充填空気圧確認",
-                            "不要"
-                        ]
-                    }
-                ]
-            },
+                    "tireReplaceJdg": "即交換",
+                    "yearManufacJdg": "不要",
+                    "recombinIO": "不要",
+                    "punctureInsp": "不要",
+                    "alignment": "不要",
+                    "wheelReplace": "不要",
+                    "checkFillAir": "不要"
+                },
             "status": {
-                "label": "状態",
-                "content": [
-                    {
-                        "item": [
-                            "残溝",
-                            "0.2mm"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "異物刺さり",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "偏摩耗",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイールリム曲がり",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ひび割れ",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイール腐食",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "傷/セパレーション",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ナット座摩滅",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "エア流れ",
-                            "なし"
-                        ]
-                    }
-                ]
+                "remainGroove": "0.2mm",
+                "foreignObjectStab": "良好",
+                "unevenWear": "良好",
+                "wheelRimBend": "良好",
+                "alignment": "良好",
+                "crack": "良好",
+                "wheelCorrosion": "良好",
+                "separation": "良好",
+                "nutSearWear": "良好",
+                "airFlow": "なし"
             },
-            "comment": {
-                "label": "コメント",
-                "content": ""
-            }
+            "comment": ""
         },
         {
-            "number": "02",
             "name": "2 前右",
+            "number": "02",
             "image": {
                 "src": "tire1.png",
                 "alt": "tire1"
             },
-            "tireInfo": {
-                "label": "タイヤ情報",
-                "content": "[スタッドレス][アルミニウム][145/65R15]"
-            },
-            "maker": {
-                "label": "メーカー/製造年",
-                "content": "[BS製][[2507][2007年06月]]"
-            },
+            "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+            "makerVersion": "[BS製][[2507][2007年06月]]",
             "measurement": {
-                "label": "測定",
-                "content": [
-                    {
-                        "item": [
-                            "タイヤ交換判定",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "製造年数判定",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "IN/OUT 組み換え",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "パンク点検",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "アライメント",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイール交換/修理",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "充填空気圧確認",
-                            "不要"
-                        ]
-                    }
-                ]
-            },
+                    "tireReplaceJdg": "不要",
+                    "yearManufacJdg": "不要",
+                    "recombinIO": "不要",
+                    "punctureInsp": "不要",
+                    "alignment": "不要",
+                    "wheelReplace": "不要",
+                    "checkFillAir": "不要"
+                },
             "status": {
-                "label": "状態",
-                "content": [
-                    {
-                        "item": [
-                            "残溝",
-                            "0.2mm"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "異物刺さり",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "偏摩耗",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイールリム曲がり",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ひび割れ",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイール腐食",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "傷/セパレーション",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ナット座摩滅",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "エア流れ",
-                            "なし"
-                        ]
-                    }
-                ]
+                "remainGroove": "0.2mm",
+                "foreignObjectStab": "良好",
+                "unevenWear": "良好",
+                "wheelRimBend": "良好",
+                "alignment": "良好",
+                "crack": "良好",
+                "wheelCorrosion": "良好",
+                "separation": "良好",
+                "nutSearWear": "良好",
+                "airFlow": "なし"
             },
-            "comment": {
-                "label": "コメント",
-                "content": ""
-            }
+            "comment": ""
         },
         {
-            "number": "03",
             "name": "3 後左",
+            "number": "03",
             "image": {
                 "src": "tire1.png",
                 "alt": "tire1"
             },
-            "tireInfo": {
-                "label": "タイヤ情報",
-                "content": "[スタッドレス][アルミニウム][145/65R15]"
-            },
-            "maker": {
-                "label": "メーカー/製造年",
-                "content": "[BS製][[2507][2007年06月]]"
-            },
+            "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+            "makerVersion": "[BS製][[2507][2007年06月]]",
             "measurement": {
-                "label": "測定",
-                "content": [
-                    {
-                        "item": [
-                            "タイヤ交換判定",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "製造年数判定",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "IN/OUT 組み換え",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "パンク点検",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "アライメント",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイール交換/修理",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "充填空気圧確認",
-                            "不要"
-                        ]
-                    }
-                ]
-            },
+                    "tireReplaceJdg": "不要",
+                    "yearManufacJdg": "不要",
+                    "recombinIO": "不要",
+                    "punctureInsp": "不要",
+                    "alignment": "不要",
+                    "wheelReplace": "不要",
+                    "checkFillAir": "不要"
+                },
             "status": {
-                "label": "状態",
-                "content": [
-                    {
-                        "item": [
-                            "残溝",
-                            "0.2mm"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "異物刺さり",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "偏摩耗",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイールリム曲がり",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ひび割れ",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイール腐食",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "傷/セパレーション",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ナット座摩滅",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "エア流れ",
-                            "なし"
-                        ]
-                    }
-                ]
+                "remainGroove": "0.2mm",
+                "foreignObjectStab": "良好",
+                "unevenWear": "良好",
+                "wheelRimBend": "良好",
+                "alignment": "良好",
+                "crack": "良好",
+                "wheelCorrosion": "良好",
+                "separation": "良好",
+                "nutSearWear": "良好",
+                "airFlow": "なし"
             },
-            "comment": {
-                "label": "コメント",
-                "content": ""
-            }
+            "comment": ""
         },
         {
-            "number": "04",
             "name": "4 後右",
+            "number": "04",
             "image": {
                 "src": "tire1.png",
                 "alt": "tire1"
             },
-            "tireInfo": {
-                "label": "タイヤ情報",
-                "content": "[スタッドレス][アルミニウム][145/65R15]"
-            },
-            "maker": {
-                "label": "メーカー/製造年",
-                "content": "[BS製][[2507][2007年06月]]"
-            },
+            "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+            "makerVersion": "[BS製][[2507][2007年06月]]",
             "measurement": {
-                "label": "測定",
-                "content": [
-                    {
-                        "item": [
-                            "タイヤ交換判定",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "製造年数判定",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "IN/OUT 組み換え",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "パンク点検",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "アライメント",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイール交換/修理",
-                            "不要"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "充填空気圧確認",
-                            "不要"
-                        ]
-                    }
-                ]
-            },
+                    "tireReplaceJdg": "不要",
+                    "yearManufacJdg": "不要",
+                    "recombinIO": "不要",
+                    "punctureInsp": "不要",
+                    "alignment": "不要",
+                    "wheelReplace": "不要",
+                    "checkFillAir": "不要"
+                },
             "status": {
-                "label": "状態",
-                "content": [
-                    {
-                        "item": [
-                            "残溝",
-                            "0.2mm"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "異物刺さり",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "偏摩耗",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイールリム曲がり",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ひび割れ",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ホイール腐食",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "傷/セパレーション",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "ナット座摩滅",
-                            "良好"
-                        ]
-                    },
-                    {
-                        "item": [
-                            "エア流れ",
-                            "なし"
-                        ]
-                    }
-                ]
+                "remainGroove": "0.2mm",
+                "foreignObjectStab": "良好",
+                "unevenWear": "良好",
+                "wheelRimBend": "良好",
+                "alignment": "良好",
+                "crack": "良好",
+                "wheelCorrosion": "良好",
+                "separation": "良好",
+                "nutSearWear": "良好",
+                "airFlow": "なし"
             },
-            "comment": {
-                "label": "コメント",
-                "content": ""
-            }
+            "comment": ""
         }
     ]
 }

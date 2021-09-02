@@ -69,102 +69,86 @@ function TireTable(props) {
       <table className={classes.table}>
         <tr>
           <th rowSpan={2} className={classes.row1col1}>
-            {data.number}
+          {data.number}
           </th>
-          <th className={classes.row1col2}>{data.tireInfo.label}</th>
-          <td colSpan={3}>{data.tireInfo.content}</td>
+          <th className={classes.row1col2}>タイヤ情報</th>
+          <td colSpan={3}>{data.tireInfomation}</td>
         </tr>
         <tr>
-          <th className={classes.row1col2}>{data.maker.label}</th>
-          <td colSpan={3}>{data.maker.content}</td>
+          <th className={classes.row1col2}>メーカー/製造年</th>
+          <td colSpan={3}>{data.makerVersion}</td>
         </tr>
         <tr>
           <th rowSpan={4} className={classes.row3header}>
-            {data.measurement.label}
+            測定
           </th>
-          <th className={classes.row3th}>
-            {data.measurement.content[0].item[0]}
-          </th>
+          <th className={classes.row3th}>タイヤ交換判定</th>
           <td
             className={
-              data.measurement.content[0].item[1] === "即交換"
+              data.measurement.tireReplaceJdg === "即交換"
                 ? classes.row3td1
                 : classes.row3td
             }
           >
-            {data.measurement.content[0].item[1]}
+            {data.measurement.tireReplaceJdg}
           </td>
-          <th className={classes.row3th}>
-            {data.measurement.content[1].item[0]}
-          </th>
-          <td className={classes.row3td}>
-            {data.measurement.content[1].item[1]}
-          </td>
+          <th className={classes.row3th}>製造年数判定</th>
+          <td className={classes.row3td}>{data.measurement.yearManufacJdg}</td>
         </tr>
         <tr>
-          <th className={classes.row3th}>
-            {data.measurement.content[2].item[0]}
-          </th>
-          <td>{data.measurement.content[2].item[1]}</td>
-          <th className={classes.row3th}>
-            {data.measurement.content[3].item[0]}
-          </th>
-          <td>{data.measurement.content[3].item[1]}</td>
+          <th className={classes.row3th}>IN/OUT 組み換え</th>
+          <td className={classes.row3td}>{data.measurement.recombinIO}</td>
+          <th className={classes.row3th}>パンク点検</th>
+          <td className={classes.row3td}>{data.measurement.punctureInsp}</td>
         </tr>
         <tr>
-          <th className={classes.row3th}>
-            {data.measurement.content[4].item[0]}
-          </th>
-          <td>{data.measurement.content[4].item[1]}</td>
-          <th className={classes.row3th}>
-            {data.measurement.content[5].item[0]}
-          </th>
-          <td>{data.measurement.content[5].item[1]}</td>
+          <th className={classes.row3th}>アライメント</th>
+          <td className={classes.row3td}>{data.measurement.alignment}</td>
+          <th className={classes.row3th}>ホイール交換/修理</th>
+          <td className={classes.row3td}>{data.measurement.wheelReplace}</td>
         </tr>
         <tr>
-          <th className={classes.row3th}>
-            {data.measurement.content[6].item[0]}
-          </th>
-          <td>{data.measurement.content[6].item[1]}</td>
+          <th className={classes.row3th}>充填空気圧確認</th>
+          <td className={classes.row3td}>{data.measurement.checkFillAir}</td>
           <th colSpan={2}></th>
         </tr>
         <tr>
           <th rowSpan={5} className={classes.row7header}>
-            {data.status.label}
+            状態
           </th>
-          <th className={classes.row7th}>{data.status.content[0].item[0]}</th>
-          <td className={classes.row7td1}>{data.status.content[0].item[1]}</td>
-          <th className={classes.row7th}>{data.status.content[1].item[0]}</th>
-          <td className={classes.row7td}>{data.status.content[1].item[1]}</td>
+          <th className={classes.row7th}>残溝</th>
+          <td className={classes.row7td1}>{data.status.remainGroove}</td>
+          <th className={classes.row7th}>異物刺さり</th>
+          <td className={classes.row7td}>{data.status.foreignObjectStab}</td>
         </tr>
         <tr>
-          <th className={classes.row7th}>{data.status.content[2].item[0]}</th>
-          <td>{data.status.content[2].item[1]}</td>
-          <th className={classes.row7th}>{data.status.content[3].item[0]}</th>
-          <td>{data.status.content[3].item[1]}</td>
+          <th className={classes.row7th}>偏摩耗</th>
+          <td>{data.status.unevenWear}</td>
+          <th className={classes.row7th}>ホイールリム曲がり</th>
+          <td>{data.status.wheelRimBend}</td>
         </tr>
         <tr>
-          <th className={classes.row7th}>{data.status.content[4].item[0]}</th>
-          <td>{data.status.content[5].item[1]}</td>
-          <th className={classes.row7th}>{data.status.content[5].item[0]}</th>
-          <td>{data.status.content[5].item[1]}</td>
+          <th className={classes.row7th}>ひび割れ</th>
+          <td>{data.status.crack}</td>
+          <th className={classes.row7th}>ホイール腐食</th>
+          <td>{data.status.wheelCorrosion}</td>
         </tr>
         <tr>
-          <th className={classes.row7th}>{data.status.content[6].item[0]}</th>
-          <td>{data.status.content[6].item[1]}</td>
-          <th className={classes.row7th}>{data.status.content[7].item[0]}</th>
-          <td>{data.status.content[7].item[1]}</td>
+          <th className={classes.row7th}>傷/セパレーション</th>
+          <td>{data.status.separation}</td>
+          <th className={classes.row7th}>ナット座摩滅</th>
+          <td>{data.status.nutSearWear}</td>
         </tr>
         <tr>
-          <th className={classes.row7th}>{data.status.content[8].item[0]}</th>
-          <td>{data.status.content[8].item[1]}</td>
+          <th className={classes.row7th}>エア流れ</th>
+          <td>{data.status.airFlow}</td>
           <th colSpan={2}></th>
         </tr>
         <tr>
           <th colSpan={2} className={classes.comment}>
-            {data.comment.label}
+            コメント
           </th>
-          <th colSpan={3}>{data.comment.content}</th>
+          <th colSpan={3}>{data.comment}</th>
         </tr>
       </table>
     </div>
