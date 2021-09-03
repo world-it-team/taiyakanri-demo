@@ -27,28 +27,27 @@ const useStyles = makeStyles((theme) => ({
 function ProductInfo(props) {
     const classes = useStyles();
     return (
-        <table className={classes.table}>
-            <tr className={classes.title}>
-                <td>検索実施日</td>
-                <td>ステータス</td>
-                <td>タイヤ種別</td>
-                <td>ホイール</td>
-                <td>ランフラッド</td>
-                <td colSpan="2">経過年数</td>
-            </tr>
-            <tr>
-
-                <td>{data.productInfo.searchDate}</td>
-                <td>{data.productInfo.status}</td>
-                <td>{data.productInfo.tireType}</td>
-                <td>{data.productInfo.wheel}</td>
-                <td>{data.productInfo.runFlood}</td>
-                <td className={classes.contentChild}>{data.productInfo.elapsedYears.recommended}</td>
-                <td>{data.productInfo.elapsedYears.date}</td>
-
-
-            </tr>
-        </table>
+      <table className={classes.table}>
+        <tr className={classes.title}>
+          <td>検索実施日</td>
+          <td>ステータス</td>
+          <td>タイヤ種別</td>
+          <td>ホイール</td>
+          <td>ランフラッド</td>
+          <td colSpan="2">経過年数</td>
+        </tr>
+        <tr>
+          <td>{data.productInfo.searchDate}</td>
+          <td>{data.productInfo.status}</td>
+          <td>{data.productInfo.tireType}</td>
+          <td>{data.productInfo.wheel}</td>
+          <td>{data.productInfo.runFlood}</td>
+          <td className={classes.contentChild}>
+            {data.productInfo.recommended}
+          </td>
+          <td>{data.productInfo.usedTime}</td>
+        </tr>
+      </table>
     );
 }
 

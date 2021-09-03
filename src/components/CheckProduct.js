@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data/checkProduct.json";
+import data from "../data/productInfo.json";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -15,11 +15,10 @@ const useStyles = makeStyles((theme) => ({
     "& tr": {
       height: "30px",
     },
-
   },
   title: {
     backgroundColor: "#e6f2f5",
-  }
+  },
 }));
 
 function CheckProduct(props) {
@@ -34,11 +33,11 @@ function CheckProduct(props) {
         <td>ホイール交換/修理</td>
       </tr>
       <tr>
-        <td>{data.checkProduct.recombinationIO}</td>
-        <td>{data.checkProduct.alignment}</td>
-        <td>{data.checkProduct.check}</td>
-        <td>{data.checkProduct.punctureIns}</td>
-        <td>{data.checkProduct.replacementOrRepair}</td>
+        <td>{data.checkProductResult.recombinationIO}</td>
+        <td>{data.checkProductResult.alignment}</td>
+        <td>{data.checkProductResult.check}</td>
+        <td>{data.checkProductResult.punctureIns}</td>
+        <td>{data.checkProductResult.replacementOrRepair}</td>
       </tr>
     </table>
   );

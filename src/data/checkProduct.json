@@ -1,9 +1,0 @@
-{
-    "checkProduct": {
-        "recombinationIO": "不要",
-        "alignment": "不要",
-        "check": "不要",
-        "punctureIns": "不要",
-        "replacementOrRepair": "不要"
-    }
-}
