@@ -1,20 +1,69 @@
-type Blog @model {
+enum TireNumberEnum {
+  TOPLEFT
+  TOPRIGHT
+  BOTTOMLEFT
+  BOTTOMRIGHT
+
+}
+type TireMeasurement {
+  tireReplaceJdg: String!
+  yearManufacJdg: String!
+  recombinIO: String!
+  punctureInsp: String!
+  alignment: String!
+  wheelReplace: String!
+  checkFillAir: String!
+}
+
+type TireStatus {
+  remainGroove: String!
+  foreignObjectStab: String!
+  unevenWear: String!
+  wheelRimBend: String!
+  crack: String!
+  wheelCorrosion: String!
+  separation: String!
+  nutSearWear: String!
+  airFlow: String!
+}
+
+type TopTable  {
+  controlNumber: String!
+  contractorName: String!
+  location: String!
+  vehicleType: String!
+  number: String!
+  wareHouse: String!
+  contractPeriod: String!
+  contractType: String!
+}
+type ProductInfo {
+  searchDate: String!
+  status: String!
+  tireType: String!
+  wheel: String!
+  runFlood: String!
+  recommended: String!
+  usedTime: String!
+}
+
+type TireCheckinfo @model{
+  id: ID!
+  topTable: TopTable!
+  productInfo: ProductInfo!
+  tires: [TireProfile] @connection(keyName:"byTireCheckinfo",fields:["id"]) 
+ }
+
+type TireProfile @model @key(name:"byTireCheckinfo",fields:["checkInfoID"]) {
   id: ID!
   name: String!
-  posts: [Post] @connection(keyName: "byBlog", fields: ["id"])
-}
-
-type Post @model @key(name: "byBlog", fields: ["blogID"]) {
-  id: ID!
-  title: String!
-  blogID: ID!
-  blog: Blog @connection(fields: ["blogID"])
-  comments: [Comment] @connection(keyName: "byPost", fields: ["id"])
-}
-
-type Comment @model @key(name: "byPost", fields: ["postID", "content"]) {
-  id: ID!
-  postID: ID!
-  post: Post @connection(fields: ["postID"])
-  content: String!
+  number: TireNumberEnum!
+  image: String!
+  tireInfomation: String!
+  makerVersion: String!
+  measurement: TireMeasurement!
+  status: TireStatus!
+  comment: String!
+  checkInfoID: ID!
+  tireCheckinfo:TireCheckinfo @connection(fields:["checkInfoID"])
 }
